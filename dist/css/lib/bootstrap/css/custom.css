@@ -1,0 +1,89 @@
+
+.header-notif {
+	background-color:#1BA0E1;
+	color:#FFFFFF;
+	padding:5px 10px 5px 10px;
+	font-weight:bold;
+}
+.main {
+	background-color:#FFFFFF;
+	margin:0 auto;
+	float:left;
+	width:100%;
+}
+.psgr {
+	width:180px;
+}
+.psg {
+	width:60px;
+	float:left;
+}
+.src {
+	width:180px;
+	height:60px;
+}
+.putih {
+	background-color:#FFFFFF;
+}
+.batas{
+	margin-bottom:10px;
+}
+
+.nilai{
+	vertical-align: middle !important;
+	text-align: center;
+	border:solid 1px;
+}
+
+.teks{
+	vertical-align: middle !important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.vertical{
+    transform: rotate(90deg);
+	transform-origin: left top 0;
+}
+.biodata th{
+	white-space: nowrap;
+}
+
+.judul{
+    font-size: 24px !important;
+}
+.panel-default{border-color:#1BA0E1; border-radius:0px}
+.panel-default>.panel-heading{color:#F0F0F0;background-color:#1BA0E1;border-color:#1BA0E1}
+.panel-heading{padding:10px 15px;border-bottom:1px solid transparent;border-top-left-radius:0px;border-top-right-radius:0px}
