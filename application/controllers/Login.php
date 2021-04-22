@@ -14,7 +14,7 @@ class Login extends CI_Controller {
 			
 			$username = $this->input->post('username');
 			$pass = $this->input->post('password');
-			$pass = $this->Myencrypt->xorcript($pass, "en");
+			$pass = md5($pass);
 			$login = $this->Sql->login($username, $pass);
 		}
 

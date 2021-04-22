@@ -3,7 +3,7 @@
 	
 	class Update_data extends CI_Model{
 		function dokter($id, $nama, $jenis_kelamin, $alamat, $username, $password){
-			$password = $this->Myencrypt->xorcript($password, "en");
+			$password = md5($password);
 			$data = array("nama_dokter" => $nama, "jenis_kelamin" => $jenis_kelamin, "alamat" => $alamat, "username" => $username, "password" => $password);
 			$this->db->where("id_dokter", $id);
 			$this->db->update("dokter", $data);
